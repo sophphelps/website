@@ -259,13 +259,13 @@ html {
 
 .planet {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     width: 60px;
     height: 60px;
     background: var(--gradient-purple);
     border-radius: 50%;
-    transform: translate(-50%, -50%) translateX(120px);
+    transform: translateX(-50%);
     box-shadow: 
         0 0 20px rgba(139, 92, 246, 0.5),
         inset -10px -10px 20px rgba(0, 0, 0, 0.3);
@@ -285,10 +285,10 @@ html {
 
 @keyframes orbit {
     0% { 
-        transform: translate(-50%, -50%) translateX(120px) rotate(0deg);
+        transform: translateX(-50%) rotate(0deg);
     }
     100% { 
-        transform: translate(-50%, -50%) translateX(120px) rotate(360deg);
+        transform: translateX(-50%) rotate(360deg);
     }
 }
 
