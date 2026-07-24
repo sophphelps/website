@@ -10,8 +10,8 @@ export type Experience = {
 
 // Replace placeholder URLs with your public profiles when ready.
 export const externalLinks = {
-  email: "mailto:YOUR_EMAIL@example.com",
-  linkedin: "#placeholder-linkedin",
+  email: "mailto:phelpssn@uci.edu",
+  linkedin: "https://www.linkedin.com/in/sophia-phelps-6487912b7/",
   github: "#placeholder-github",
   scholar: "#placeholder-google-scholar",
   orcid: "#placeholder-orcid",
