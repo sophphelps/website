@@ -44,14 +44,6 @@ export const researchExperiences: Experience[] = [
     ],
     tags: ["Quantitative modeling", "Python", "Literature analysis", "HZO"],
   },
-  {
-    title: "Student Researcher",
-    organization: "NASA TechRise",
-    dates: "October 2021–May 2022",
-    summary:
-      "Helped design and launch a modified CosmicWatch detector aboard a sounding rocket to measure X-ray and gamma-ray radiation in low Earth orbit.",
-    tags: ["Instrumentation", "Radiation detection", "Sounding rocket"],
-  },
 ];
 
 export const teachingExperiences: Experience[] = [
