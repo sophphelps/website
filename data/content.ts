@@ -24,13 +24,13 @@ export const researchExperiences: Experience[] = [
     dates: "June 2025–Present",
     location: "Pasadena, California",
     summary:
-      "Investigating solar magnetic activity with the PARVI spectrograph and SoCalSoCal solar feed to improve radial velocity precision for exoplanet detection.",
+      "Analyze the equivalent-width variability of Zeeman-sensitive near-infrared solar absorption lines as potential indicators of stellar magnetic activity.",
     highlights: [
-      "Awarded the Caltech SURF@JPL Fellowship in 2025 and JPL Summer Internship Program award in 2026.",
-      "Conduct research with Dr. Gautam Vasisht and co-mentors Dr. Samuel Halverson and Dr. Keeyoon Sung.",
-      "Analyze solar magnetic activity diagnostics and near-infrared spectra using MATLAB and Python.",
+      "Measured equivalent-width variability in a strongly Zeeman-sensitive Fe I line near 1565 nm using high-resolution Sun-as-a-star spectra.",
+      "Used a nearby telluric H₂O feature as a control for residual atmospheric contamination.",
+      "Applied periodogram analysis to search for variability associated with solar rotation.",
+      "Currently extending the observational baseline and analyzing additional lines in the J band.",
     ],
-    tags: ["Solar activity", "Near-infrared spectroscopy", "Precision radial velocity", "PARVI", "Python", "MATLAB"],
   },
   {
     title: "Student Researcher",
