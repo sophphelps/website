@@ -11,11 +11,10 @@ export default function CVPage() {
     <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20 lg:px-8">
       <div className="no-print">
         <PageIntro eyebrow="Curriculum vitae" title="Experience, education, and selected work.">
-          <p>An accessible HTML summary is provided below. A final PDF can replace the current print-ready placeholder.</p>
         </PageIntro>
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <PrintButton />
-          <p className="text-sm text-muted">PDF file placeholder — add <code className="rounded bg-white px-1.5 py-1">public/sophia-phelps-cv.pdf</code> when ready.</p>
+          <p className="text-sm text-muted"> </p>
         </div>
       </div>
 
