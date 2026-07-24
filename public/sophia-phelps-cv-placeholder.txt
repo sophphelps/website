@@ -1,0 +1,4 @@
+CV PDF PLACEHOLDER
+
+Replace this file by adding your final PDF as:
+public/sophia-phelps-cv.pdf

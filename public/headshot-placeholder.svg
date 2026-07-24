@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Professional headshot placeholder</title>
+  <desc id="desc">Replace this file with a professional portrait.</desc>
+  <rect width="800" height="1000" fill="#dbe4e7"/>
+  <circle cx="400" cy="390" r="120" fill="none" stroke="#315c75" stroke-opacity=".35" stroke-width="8"/>
+  <path d="M180 820c25-190 150-290 220-290s195 100 220 290" fill="none" stroke="#315c75" stroke-opacity=".35" stroke-width="8"/>
+  <text x="400" y="910" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" letter-spacing="4" fill="#315c75" fill-opacity=".65">HEADSHOT PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink antialiased; }
+  ::selection { @apply bg-accent/20; }
+  :focus-visible { @apply outline outline-2 outline-offset-4 outline-accent; }
+}
+
+@layer components {
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent; }
+  .section-title { @apply mt-3 font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl; }
+  .button-primary { @apply inline-flex items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink; }
+  .button-secondary { @apply inline-flex items-center justify-center rounded-md border border-line bg-white px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent; }
+}
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: white; }
+  main { padding: 0 !important; }
+}
