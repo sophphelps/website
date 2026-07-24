@@ -1,8 +1,6 @@
-import { ExperienceCard } from "@/components/ExperienceCard";
 import {
   publications,
   presentations,
-  researchExperiences,
 } from "@/data/content";
 
 const outputs = [
@@ -83,75 +81,6 @@ export default function ResearchPage() {
             observational time baseline and analyzing additional
             Zeeman-sensitive lines in the J band.
           </p>
-        </div>
-      </section>
-
-      <section
-        className="border-t border-line py-16"
-        aria-labelledby="experience-heading"
-      >
-        <h2
-          id="experience-heading"
-          className="font-serif text-3xl font-semibold text-ink"
-        >
-          Research experience
-        </h2>
-
-        <div className="mt-10">
-          {researchExperiences.map((experience) => (
-            <ExperienceCard
-              key={`${experience.organization}-${experience.title}`}
-              experience={experience}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section
-        className="border-t border-line py-16"
-        aria-labelledby="outputs-heading"
-      >
-        <h2
-          id="outputs-heading"
-          className="font-serif text-3xl font-semibold text-ink"
-        >
-          Papers and posters
-        </h2>
-
-        <div className="mt-9 space-y-10">
-          {outputs.map((output) => (
-            <article
-              key={`${output.type}-${output.title}`}
-              className="max-w-3xl"
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-accent">
-                {output.type}
-              </p>
-
-              <h3 className="mt-3 font-serif text-xl font-semibold text-ink">
-                {output.title}
-              </h3>
-
-              <p className="mt-3 text-sm leading-6 text-muted">
-                {output.description}
-              </p>
-
-              {output.href ? (
-                <a
-                  href={output.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm font-semibold text-accent hover:underline"
-                >
-                  {output.linkText}
-                </a>
-              ) : (
-                <p className="mt-4 text-sm text-muted">
-                  PDF coming soon
-                </p>
-              )}
-            </article>
-          ))}
         </div>
       </section>
     </main>
