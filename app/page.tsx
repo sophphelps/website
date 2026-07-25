@@ -32,7 +32,7 @@ export default function Home() {
 
       <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-sm">
         <Image
-          src="/Unknown.jpg"
+          src="/Unknown.jpeg"
           alt="Portrait of Sophia Phelps"
           fill
           priority
