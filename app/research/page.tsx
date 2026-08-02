@@ -9,7 +9,7 @@ const outputs = [
     title: publications[0],
     description:
       "Equivalent-width variability of a Zeeman-sensitive near-infrared Fe I line as a potential indicator of solar magnetic activity.",
-    href: "/sophia-phelps-journal-article.pdf",
+    href: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/sophia-phelps-journal-article.pdf`,
     linkText: "Read paper (PDF)",
   },
   {

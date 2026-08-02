@@ -1,22 +1,23 @@
 # Sophia Phelps — Academic Portfolio
 
-A responsive academic portfolio built with Next.js, TypeScript, Tailwind CSS, and the vinext build tool. The content is organized in reusable data structures so experience, links, awards, and skills can be updated without rewriting page layouts.
+A responsive academic portfolio built with Next.js, TypeScript, and Tailwind CSS. The content is organized in reusable data structures so experience, links, awards, and skills can be updated without rewriting page layouts.
 
 ## Run locally
 
-Requirements: Node.js 18.17 or newer.
+Requirements: Node.js 22 or newer.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. To check a production build:
+Open `http://localhost:3000`. To create the production-ready static site:
 
 ```bash
 npm run build
-npm start
 ```
+
+The generated site is written to `out/`.
 
 ## Edit content
 
@@ -37,13 +38,14 @@ Search the project for `placeholder`, `YOUR_`, or `#placeholder` to find every i
 4. Replace placeholder contact and profile URLs in `data/content.ts`.
 5. Replace publication, poster, slide, repository, and DOI placeholders once they are public.
 
-## Deploy with Vercel
+## Deploy with GitHub Pages
 
-1. Push this folder to a Git repository.
-2. In Vercel, choose **Add New → Project** and import the repository.
-3. Vercel will detect Next.js automatically. Keep the default build command (`next build`) and output settings.
-4. Select **Deploy**.
-5. Add your custom domain under **Project Settings → Domains**, if desired.
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the static export whenever a commit is pushed to `main`. It can also be run manually from the repository's **Actions** tab.
+
+1. Open the repository on GitHub and go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push the deployment changes to `main`, or run the workflow manually.
+4. After the workflow succeeds, use the URL shown in the `github-pages` deployment environment.
 
 No environment variables are required.
 

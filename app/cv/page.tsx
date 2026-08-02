@@ -33,7 +33,7 @@ export default function CVPage() {
 
       <div className="mt-8">
         <a
-          href="/sophia-phelps-cv.pdf"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/sophia-phelps-cv.pdf`}
           download="Sophia-Phelps-CV.pdf"
           className="button-primary inline-block"
         >

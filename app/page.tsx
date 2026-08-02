@@ -1,4 +1,5 @@
 import Image from "next/image";
+import portrait from "@/public/Unknown.jpeg";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
 
       <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-sm">
         <Image
-          src="/Unknown.jpeg"
+          src={portrait}
           alt="Portrait of Sophia Phelps"
           fill
           priority
