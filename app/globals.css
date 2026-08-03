@@ -17,7 +17,29 @@
 }
 
 @media print {
-  header, footer, .no-print { display: none !important; }
+  @page {
+    size: letter;
+    margin: 0.62in 0.72in;
+  }
+  body > header, body > footer, .no-print { display: none !important; }
   body { background: white; }
   main { padding: 0 !important; }
+  .cv-document {
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  .cv-header h1 { font-size: 22.5pt !important; line-height: 24.5pt !important; }
+  .cv-document, .cv-document address { color: #111 !important; font-size: 9.25pt !important; line-height: 11pt !important; }
+  .cv-section { margin-top: 8pt !important; }
+  .cv-section > h2 { font-size: 9.75pt !important; line-height: 11.6pt !important; }
+  .cv-section > div { margin-top: 4pt !important; font-size: 9.25pt !important; line-height: 11pt !important; }
+  .cv-entry { break-inside: avoid; }
+}
+
+.cv-separator::before,
+.cv-detail::before {
+  content: " · ";
 }
