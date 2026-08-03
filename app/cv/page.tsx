@@ -24,10 +24,10 @@ const education: CVEntry[] = [
     location: "Irvine, CA",
   },
   {
-    institution: "University of California, Los Angeles",
-    dates: "Sept. 2022 – June 2026",
-    position: <>Physics, B.S. <span className="cv-separator">GPA: 3.590</span></>,
-    location: "Los Angeles, CA",
+  institution: "University of California, Los Angeles",
+  dates: "Sept. 2022 – June 2026",
+  position: "Physics, B.S.",
+  location: "Los Angeles, CA",
   },
 ];
 
@@ -167,10 +167,7 @@ export default function CVPage() {
               <strong>Programming:</strong> Python (NumPy, SciPy, Pandas, Matplotlib, Astropy, barycorrpy, scikit-learn, PyTorch, and Keras); MATLAB; C++.
             </li>
             <li>
-              <strong>Scientific computing and tools:</strong> Git, Linux/Bash, Jupyter, VS Code, LaTeX, FITS, and SQLite.
-            </li>
-            <li>
-              <strong>Web development:</strong> React, Vite, FastAPI, HTML/CSS, and REST APIs.
+              <strong>Scientific computing and tools:</strong> Git, Linux/Bash, Jupyter, VS Code, LaTeX, and FITS.
             </li>
           </CVList>
         </CVSection>
