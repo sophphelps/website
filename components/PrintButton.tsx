@@ -1,5 +1,11 @@
-"use client";
-
 export function PrintButton() {
-  return <button onClick={() => window.print()} className="button-primary no-print">Download / print CV</button>;
+  return (
+    <a
+      href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Sophia_Phelps_CV.pdf`}
+      download="Sophia_Phelps_CV.pdf"
+      className="button-primary no-print"
+    >
+      Download CV
+    </a>
+  );
 }
