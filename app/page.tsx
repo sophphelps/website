@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import portrait from "@/public/Unknown.jpeg";
 
 export default function Home() {
@@ -27,7 +28,13 @@ export default function Home() {
         <p className="mt-5 max-w-2xl leading-7 text-muted">
           I am also passionate about collaborative and inclusive teaching. I
           aim to create learning environments where students feel comfortable
-          asking questions, exploring ideas, and building confidence.
+          asking questions, exploring ideas, and building confidence.{" "}
+          <Link
+            href="/about"
+            className="font-medium text-accent underline-offset-4 hover:underline"
+          >
+            Read more about my path into physics →
+          </Link>
         </p>
       </div>
 
