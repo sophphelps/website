@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Sophia Phelps’s path into physics and how her experiences as a low-income, first-generation student shape her commitment to teaching and mentorship.",
+    "Learn about Sophia Phelps’s path from Arlington and UCLA to exoplanet research, teaching, and graduate study at UC Irvine.",
 };
 
 export default function AboutPage() {
@@ -13,13 +13,12 @@ export default function AboutPage() {
         <p className="eyebrow">About</p>
 
         <h1 className="mt-4 font-serif text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-          Physics, teaching, and educational access
+          About me
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-muted">
-          My experiences as a low-income, first-generation student have shaped
-          both my path into physics and my commitment to teaching, mentorship,
-          and educational access.
+          Hi, I’m Sophia! I’m an incoming Physics Ph.D. student and NSF Graduate
+          Research Fellow at UC Irvine.
         </p>
       </header>
 
@@ -36,45 +35,34 @@ export default function AboutPage() {
 
         <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
           <p>
-            I recently graduated from UCLA with a B.S. in Physics. I will
-            continue at UC Irvine as an NSF Graduate Research Fellow and
-            Physics Ph.D. student.
+            I grew up in Arlington, Virginia, right outside of Washington, D.C.
+            I went to Washington-Liberty High School, where I graduated ranked
+            first in my class. I became interested in astronomy in high school
+            after watching <em>Cosmos</em> and taking a few space science
+            courses through the Virginia Space Grant Consortium.
           </p>
 
           <p>
-            As a low-income, first-generation student, I care deeply about
-            educational access and about learning environments where students
-            feel comfortable asking questions, exploring ideas, and building
-            confidence.
-          </p>
-        </div>
-      </section>
-
-      <section
-        className="border-t border-line py-16"
-        aria-labelledby="teaching-heading"
-      >
-        <h2
-          id="teaching-heading"
-          className="font-serif text-3xl font-semibold text-ink"
-        >
-          Why teaching and mentorship matter to me
-        </h2>
-
-        <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
-          <p>
-            Teaching and mentorship allow me to help create the collaborative,
-            inclusive learning environments that matter to me. My approach
-            emphasizes conceptual understanding, individualized support, and
-            helping students become more confident and independent problem
-            solvers.
+            I went to UCLA for college and received my B.S. in Physics. I also
+            completed the coursework for the Astrophysics major. Even though I
+            had been interested in space for a long time, I actually had a
+            pretty hard time figuring out what kind of research I wanted to do.
           </p>
 
           <p>
-            At UCLA, I served as a Learning Assistant across physics and
-            mathematics courses and as Pedagogy Head for Physics 5A. Through
-            StudySTEM, I have also tutored more than 100 students in mathematics
-            and physics, from middle school through college.
+            I first worked in condensed matter physics, where I studied
+            ferroelectric materials and nanoscale devices. I learned a lot from
+            that experience, especially about reading technical papers, coding,
+            and working with a research group, but I eventually realized that
+            it was not the field I wanted to stay in.
+          </p>
+
+          <p>
+            Later, I took a class on planets and exoplanets, and that helped
+            bring me back to the questions that originally made me interested
+            in physics. I became especially interested in how we detect planets
+            that we cannot directly see and how activity on stars can make that
+            more difficult.
           </p>
         </div>
       </section>
@@ -92,17 +80,65 @@ export default function AboutPage() {
 
         <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
           <p>
-            My research now focuses on stellar magnetic activity and its
-            impact on exoplanet detection. At NASA&apos;s Jet Propulsion
-            Laboratory, I study the equivalent-width variability of
-            Zeeman-sensitive near-infrared solar absorption lines.
+            That interest led me to NASA’s Jet Propulsion Laboratory, where I
+            now study stellar magnetic activity using high-resolution
+            near-infrared spectra of the Sun. My research looks at how changes
+            in stellar absorption lines could help us separate signals caused
+            by the star from signals caused by orbiting planets.
+          </p>
+        </div>
+      </section>
+
+      <section
+        className="border-t border-line py-16"
+        aria-labelledby="teaching-heading"
+      >
+        <h2
+          id="teaching-heading"
+          className="font-serif text-3xl font-semibold text-ink"
+        >
+          Why teaching and mentorship matter to me
+        </h2>
+
+        <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
+          <p>
+            My path through college was not always straightforward. I am a
+            low-income, first-generation student, and I had to figure out a lot
+            of the college and research process on my own. I also worked
+            throughout college and helped support my family. Tutoring became my
+            main source of income, but it also became something I genuinely
+            cared about.
           </p>
 
           <p>
-            I am interested in how these magnetically sensitive lines can help
-            distinguish stellar variability from the signals of small
-            exoplanets. I am continuing this work by extending the observational
-            time baseline and analyzing additional Zeeman-sensitive lines.
+            Through tutoring and the UCLA Learning Assistant Program, I found
+            that I really enjoy helping students work through difficult
+            material and become more confident in physics. Because I know what
+            it feels like to enter academic spaces without knowing all of the
+            unwritten rules, I care a lot about making research and higher
+            education feel more accessible.
+          </p>
+        </div>
+      </section>
+
+      <section
+        className="border-t border-line py-16"
+        aria-labelledby="looking-ahead-heading"
+      >
+        <h2
+          id="looking-ahead-heading"
+          className="font-serif text-3xl font-semibold text-ink"
+        >
+          Looking ahead
+        </h2>
+
+        <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
+          <p>
+            As I start graduate school, I hope to continue growing as both a
+            researcher and a teacher. Long term, I would love to lead a
+            research group focused on exoplanets while also creating a
+            supportive environment where students feel comfortable asking
+            questions and finding their place in science.
           </p>
         </div>
       </section>
