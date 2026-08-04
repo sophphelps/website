@@ -9,9 +9,10 @@ export default function TeachingPage() {
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-muted">
-          I care deeply about creating collaborative and inclusive learning
-          environments where students feel comfortable asking questions,
-          exploring ideas, and building confidence.
+          Teaching has become a really important part of my time in physics. I
+          enjoy helping students work through difficult material, become more
+          comfortable asking questions, and build confidence in their own
+          abilities.
         </p>
       </header>
 
@@ -33,17 +34,39 @@ export default function TeachingPage() {
             </h3>
 
             <p className="mt-3 leading-7 text-muted">
-              I served as a Learning Assistant for four academic quarters
-              across Physics 1C, Physics 5A, and Math 31A. In these roles, I
-              supported collaborative problem solving, helped lead discussion
-              sections, and encouraged students to explain their reasoning and
-              learn from one another.
+              I served as a Learning Assistant for four academic quarters in
+              Physics 1C: Electrodynamics, Optics, and Special Relativity;
+              Physics 5A: Mechanics and Energy for Life Sciences Majors; and
+              Math 31A: Differential and Integral Calculus.
             </p>
 
             <p className="mt-3 leading-7 text-muted">
-              I also served as Pedagogy Head for Physics 5A, where I led the
-              Learning Assistant team and facilitated conversations about
-              inclusive and evidence-based teaching.
+              When I first joined the program, I attended a quarter-long
+              pedagogy seminar where I learned about student-centered teaching,
+              growth mindset, inclusive teaching, and how to use questions to
+              help students work through problems on their own. I was able to
+              use what I learned directly in discussion sections while working
+              with students in small groups.
+            </p>
+
+            <p className="mt-3 leading-7 text-muted">
+              I later became a Pedagogy Head for Physics 5A. In that role, I
+              helped facilitate the pedagogy seminars for new Learning
+              Assistants and supported the LA team throughout the quarter.
+            </p>
+          </article>
+
+          <article className="border-t border-line pt-8">
+            <h3 className="font-serif text-2xl font-semibold text-ink">
+              MIPA Mentorship
+            </h3>
+
+            <p className="mt-3 leading-7 text-muted">
+              I also served as an upper-division mentor through Marginalized
+              Identities in Physics and Astronomy, or MIPA. I mentored two
+              lower-division students and helped them navigate classes,
+              research opportunities, and some of the less obvious parts of
+              being a physics student at UCLA.
             </p>
           </article>
 
@@ -53,11 +76,10 @@ export default function TeachingPage() {
             </h3>
 
             <p className="mt-3 leading-7 text-muted">
-              Through StudySTEM, I have tutored more than 100 students in
-              mathematics and physics, from middle school through college. My
-              approach emphasizes individualized support, conceptual
-              understanding, and helping students become more confident and
-              independent problem solvers.
+              Through StudySTEM, I have tutored more than 100 students in math
+              and physics, from middle school through college. Since every
+              student learns differently, I try to adjust how I explain things
+              based on what works best for them.
             </p>
           </article>
 
@@ -67,8 +89,9 @@ export default function TeachingPage() {
             </h3>
 
             <p className="mt-3 leading-7 text-muted">
-              As a Physics Ph.D. student at UC Irvine, I will continue my
-              teaching as a graduate teaching assistant.
+              As a Physics Ph.D. student at UC Irvine, I will continue teaching
+              as a graduate teaching assistant. I am looking forward to gaining
+              more experience and continuing to develop my teaching style.
             </p>
           </article>
         </div>
