@@ -1,6 +1,9 @@
+import Image from "next/image";
+import palomar from "@/public/palomar-observatory.jpeg";
+
 export default function ResearchPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16 sm:py-20 lg:px-8">
+    <main className="mx-auto max-w-5xl px-6 py-16 sm:py-20 lg:px-8">
       <header className="max-w-3xl">
         <p className="eyebrow">Research</p>
 
@@ -20,38 +23,62 @@ export default function ResearchPage() {
         className="mt-16 border-t border-line py-16"
         aria-labelledby="jpl-project-heading"
       >
-        <h2
-          id="jpl-project-heading"
-          className="font-serif text-3xl font-semibold text-ink"
-        >
-          Using the Sun to better understand other stars
-        </h2>
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+          <div>
+            <h2
+              id="jpl-project-heading"
+              className="font-serif text-3xl font-semibold text-ink"
+            >
+              Using the Sun to better understand other stars
+            </h2>
 
-        <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted">
-          <p>
-            At NASA&apos;s Jet Propulsion Laboratory, I analyze
-            high-resolution observations of the Sun collected with the PARVI
-            spectrograph and the SoCalSoCal solar feed at Palomar Observatory.
-            Because the Sun is the star we can study most closely, it gives us
-            a useful way to investigate how stellar activity affects
-            observations of more distant stars.
-          </p>
+            <div className="mt-6 space-y-5 leading-7 text-muted">
+              <p>
+                At NASA&apos;s Jet Propulsion Laboratory, I analyze
+                high-resolution observations of the Sun collected with the
+                PARVI spectrograph and the SoCalSoCal solar feed at Palomar
+                Observatory. Because the Sun is the star we can study most
+                closely, it gives us a useful way to investigate how stellar
+                activity affects observations of more distant stars.
+              </p>
 
-          <p>
-            One way to detect an exoplanet is to measure the small motion it
-            causes in its host star. As a planet orbits, its gravity pulls the
-            star slightly back and forth, causing small shifts in the
-            wavelengths of the star&apos;s light. This is known as the radial
-            velocity method.
-          </p>
+              <p>
+                One way to detect an exoplanet is to measure the small motion it
+                causes in its host star. As a planet orbits, its gravity pulls
+                the star slightly back and forth, causing small shifts in the
+                wavelengths of the star&apos;s light. This is known as the
+                radial velocity method.
+              </p>
 
-          <p>
-            The challenge is that activity on the star itself can also change
-            the shapes and positions of its absorption lines. These changes can
-            imitate a planet signal or make a real planet more difficult to
-            detect.
-          </p>
+              <p>
+                The challenge is that activity on the star itself can also
+                change the shapes and positions of its absorption lines. These
+                changes can imitate a planet signal or make a real planet more
+                difficult to detect.
+              </p>
+            </div>
+          </div>
 
+          <figure>
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src={palomar}
+                alt="Palomar Observatory"
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
+
+            <figcaption className="mt-3 text-sm leading-6 text-muted">
+              Palomar Observatory, home of the PARVI spectrograph used in my
+              solar observations.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="border-t border-line py-16">
+        <div className="max-w-3xl space-y-5 leading-7 text-muted">
           <p>
             My initial project focused on a strongly magnetically sensitive Fe
             I absorption line near 1565 nanometers. I measured how the strength
@@ -63,8 +90,7 @@ export default function ResearchPage() {
             I also study two nearby Fe I lines and a Ni I line in the same
             region of the near-infrared spectrum. Comparing several lines helps
             me determine whether they respond similarly to solar activity and
-            whether some lines are more useful activity indicators than
-            others.
+            whether some lines are more useful activity indicators than others.
           </p>
 
           <p>
@@ -99,6 +125,52 @@ export default function ResearchPage() {
             will be especially important as astronomers search for smaller,
             potentially Earth-like exoplanets.
           </p>
+        </div>
+      </section>
+
+      <section
+        className="border-t border-line py-16"
+        aria-labelledby="research-outputs-heading"
+      >
+        <div className="max-w-3xl">
+          <p className="eyebrow">Research outputs</p>
+
+          <h2
+            id="research-outputs-heading"
+            className="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink"
+          >
+            Read more about my work
+          </h2>
+
+          <p className="mt-5 leading-7 text-muted">
+            If you&apos;d like to read more about my work, check out my poster
+            presentation or journal paper, written for a general scientific
+            audience.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href={`${
+                process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+              }/Sophia_Phelps_Poster.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-secondary"
+            >
+              View Poster
+            </a>
+
+            <a
+              href={`${
+                process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+              }/sophia-phelps-journal-article.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              Read Journal Paper
+            </a>
+          </div>
         </div>
       </section>
     </main>
