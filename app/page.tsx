@@ -38,7 +38,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-sm">
+      <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-lg">
         <Image
           src={portrait}
           alt="Portrait of Sophia Phelps"
